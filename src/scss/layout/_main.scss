@@ -1,0 +1,11 @@
+@use "scss-reset";
+
+body {
+  background-color: #232730;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1 { font-size: 2em; color: #fff; font-family: Arial, sans-serif;}
+.react-icon { width: 30%; }
