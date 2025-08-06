@@ -1,14 +1,6 @@
 import React from "react";
-import react from "../../assets/react.svg";
+import Home from "../Pages/Home";
 
-const App = () => {
-    return (
-        <>
-            <h1>It works!</h1>
-            <img className="react-icon" src={react} alt="react-icon" />
-        </>
-    );
-}
+const App = () => <Home/>;
 
 export default App;
-
