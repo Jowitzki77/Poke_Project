@@ -9,6 +9,7 @@ const Header = (props) => {
             <div className={props.type}>
                 {props.children}
             </div>
+            <hr className="header__divider"/>
         </div>
 
     )

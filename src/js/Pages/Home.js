@@ -3,6 +3,7 @@ import Header from "../Components/Header/Header";
 import Logo from "../Components/Header/Logo/Logo";
 import Menu from "../Components/Header/Menu/Menu";
 import Strani from "../Components/Header/Strani/Strani";
+import Footer from "../Components/Footer/Footer";
 
 
 
@@ -20,6 +21,7 @@ const Home = () => {
                     ]}/>
                 </div>
             </Header>
+            <Footer/>
         </>
     )
 }
