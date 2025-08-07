@@ -1,6 +1,17 @@
+@use "../../../scss/general/variables";
+@use "../../../scss/general/typography";
+
 .article__main {
   border: black solid 1px;
-  padding: 1em;
+  padding: 3em;
   display: flex;
   text-align: center;
+  flex-direction: column;
+  margin-top: 10px;
+  .infoboard__title{
+    font-size: 2em;
+    font-family: variables.$primaryFont;
+    margin: 10px;
+  }
+
 }
