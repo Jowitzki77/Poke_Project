@@ -42,11 +42,16 @@
 
   li {
     a {
-      color: variables.$adjacentColor;
+      color: variables.$secondaryColor;
+      font-family: variables.$primaryFont;
       text-decoration: none;
-      font-family: "DM Sans", sans-serif;
       display: block;
       padding: 0.5em 1em;
+      text-shadow:
+              -1px -1px 0 burlywood, // top-left
+              1px -1px 0 burlywood, // top-right
+              -1px  1px 0 burlywood, // bottom-left
+              1px  1px 0 burlywood; // bottom-right
     }
   }
 }

@@ -19,3 +19,9 @@ h3 {
   font-size: 1.625em;
   @include mixins.mobile { font-size: 1.5em; }
 }
+p {
+  color: variables.$textColor;
+  font-size: 1.125em;
+  line-height: 1.75em;
+  @include mixins.mobile { font-size: 1em; }
+}
