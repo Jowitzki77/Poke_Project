@@ -1,10 +1,26 @@
+@use "../../../scss/general/variables";
+
 .footer{
     display: flex;
+    flex-direction: row;
+    align-items: center;
   justify-content: space-between;
-  .footer__info{
+  .footer__info__header{
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.6em;
+  }
+  .footer__text{
+    font-size: 0.5em;
+    color: variables.$contactColor;
+  }
+  .footer__contact{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 1em;
+  }
+  .footer__rights__text{
+    font-size: 0.5em;
+    color: variables.$contactColor;
+    font-family: "DM Sans", sans-serif;
   }
 }

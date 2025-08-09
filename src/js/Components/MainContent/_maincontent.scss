@@ -2,7 +2,7 @@
 @use "../../../scss/general/typography";
 
 .article__main {
-  border: black solid 1px;
+  //border: black solid 1px;
   padding: 5em;
   display: flex;
   text-align: center;
@@ -22,6 +22,11 @@
   .infoboard__text{
     font-family: variables.$secondaryFont;
     margin-top: 5px;
+    text-shadow:
+            -1px -1px 0 burlywood, // top-left
+            1px -1px 0 burlywood, // top-right
+            -1px  1px 0 burlywood, // bottom-left
+            1px  1px 0 burlywood; // bottom-right
 
   }
   .infoboard__description{
@@ -36,6 +41,6 @@
 
 .left__article{
   background-image: url("../../../assets/lugia.png");
-  background-size: auto;
+    background-position: center;
   background-repeat: no-repeat;
 }
