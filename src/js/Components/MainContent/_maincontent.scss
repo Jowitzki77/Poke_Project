@@ -17,7 +17,6 @@
             1px -1px 0 burlywood, // top-right
             -1px  1px 0 burlywood, // bottom-left
             1px  1px 0 burlywood; // bottom-right
-
   }
   .infoboard__text{
     font-family: variables.$secondaryFont;
@@ -27,7 +26,6 @@
             1px -1px 0 burlywood, // top-right
             -1px  1px 0 burlywood, // bottom-left
             1px  1px 0 burlywood; // bottom-right
-
   }
   .infoboard__description{
     font-family: variables.$primaryFont;
@@ -36,6 +34,19 @@
             1px -1px 0 burlywood, // top-right
             -1px  1px 0 burlywood, // bottom-left
             1px  1px 0 burlywood; // bottom-right
+  }
+  .article__event{
+    margin: 20px;
+    .article__turnir__title{
+      font-family: variables.$primaryFont;
+      font-size: 2em;
+      text-shadow:
+              -1px -1px 0 burlywood, // top-left
+              1px -1px 0 burlywood, // top-right
+              -1px  1px 0 burlywood, // bottom-left
+              1px  1px 0 burlywood; // bottom-right
+    }
+
   }
 }
 
