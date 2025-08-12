@@ -9,6 +9,11 @@ const entryPath = "src";
 module.exports = {
     mode: "none",
     entry: `./${entryPath}/js/index.js`,
+    resolve: {
+        fallback: {
+            process: require.resolve("process/browser"),
+        },
+    },
     devtool: "inline-source-map",
     output: {
         filename: "out.js",
