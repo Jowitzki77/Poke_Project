@@ -17,7 +17,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Robi Pritrznik",
+  "author": "Jakob Jovan Hrustl",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.27.7",
@@ -46,5 +46,10 @@
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.8.0",
     "scss-reset": "^1.4.6"
+  },
+  "resolve": {
+    "fallback": {
+      "crypto": false
+    }
   }
 }

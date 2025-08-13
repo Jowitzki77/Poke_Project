@@ -8,7 +8,8 @@ const Menu = () => {
     // Static menu items
     const items = [
         { title: "Turnir", url: "/turnir" },
-        { title: "Dogodki", url: "/dogodki" }
+        { title: "Dogodki", url: "/dogodki" },
+        { title: "Domov", url: "/" }
     ];
 
     useEffect(() => {

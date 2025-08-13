@@ -11,7 +11,7 @@ module.exports = {
     entry: `./${entryPath}/js/index.js`,
     resolve: {
         fallback: {
-            process: require.resolve("process/browser"),
+            process: require.resolve("process/browser.js"),
         },
     },
     devtool: "inline-source-map",
@@ -77,7 +77,7 @@ module.exports = {
     },
     plugins: [
         new webpack.ProvidePlugin({
-            process: "process/browser",
+            process: "process/browser.js",
         }),
         new HtmlWebpackPlugin({
             filename: "index.html",

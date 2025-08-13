@@ -17,7 +17,8 @@ const Home = () => {
                     <Menu/>
                     <Strani type="header__nav" items={[
                         { title: "Turnir", url: "/turnir" },
-                        { title: "Dogodki", url: "/Dogodki" }
+                        { title: "Dogodki", url: "/Dogodki" },
+                        { title: "Domov", url: "/" }
 
                     ]}/>
                 </div>
