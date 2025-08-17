@@ -4,6 +4,7 @@ import Menu from "../Components/Header/Menu/Menu";
 import Strani from "../Components/Header/Strani/Strani";
 import Header from "../Components/Header/Header";
 import Footer from "../Components/Footer/Footer";
+import Articles from "../Components/Article/Article";
 
 
 const Dogodki = () => {
@@ -21,6 +22,7 @@ const Dogodki = () => {
                     ]}/>
                 </div>
             </Header>
+            <Articles/>
             <Footer/>
         </>
     )
