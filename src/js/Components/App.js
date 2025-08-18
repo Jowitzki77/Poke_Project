@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "../Pages/Home";
 import Dogodki from "../Pages/Dogodki";
 import Turnir from "../Pages/Turnir";
+import Prijava from "../Pages/Prijava";
 
 const App = () => {
     return (
@@ -13,8 +14,10 @@ const App = () => {
                 <Route path="/turnir" element={<Turnir />} />
                 {/* Dogodki page */}
                 <Route path="/dogodki" element={<Dogodki />} />
+                <Route path="/prijava" element={<Prijava />} />
             </Routes>
         </Router>
+
     );
 };
 
