@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./_forma.scss";
 
 const Forma = () => {
@@ -9,6 +10,8 @@ const Forma = () => {
         email: ""
     });
 
+    const navigate = useNavigate();
+
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
@@ -17,15 +20,17 @@ const Forma = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log("Form submitted:", formData);
-        alert("Form submitted! Check console.");
+        alert("Form submitted! You’ll be redirected to main page.");
+        navigate("/");
     };
 
+
     return (
-        <div className="form-container">
-            <h2>Prijava</h2>
+        <div className="pokemon__form">
+            <h2 className="pokemon__form__title">Prijava</h2>
             <form onSubmit={handleSubmit}>
-                <label>
-                    Ime:
+                <div className="pokemon__form__field">
+                    <label>Ime:</label>
                     <input
                         type="text"
                         name="ime"
@@ -33,9 +38,10 @@ const Forma = () => {
                         onChange={handleChange}
                         required
                     />
-                </label>
-                <label>
-                    Priimek:
+                </div>
+
+                <div className="pokemon__form__field">
+                    <label>Priimek:</label>
                     <input
                         type="text"
                         name="priimek"
@@ -43,18 +49,20 @@ const Forma = () => {
                         onChange={handleChange}
                         required
                     />
-                </label>
-                <label>
-                    Deck:
+                </div>
+
+                <div className="pokemon__form__field">
+                    <label>Deck:</label>
                     <input
                         type="text"
                         name="deck"
                         value={formData.deck}
                         onChange={handleChange}
                     />
-                </label>
-                <label>
-                    Email:
+                </div>
+
+                <div className="pokemon__form__field">
+                    <label>Email:</label>
                     <input
                         type="email"
                         name="email"
@@ -62,8 +70,11 @@ const Forma = () => {
                         onChange={handleChange}
                         required
                     />
-                </label>
-                <button type="submit">Submit</button>
+                </div>
+
+                <button type="submit" className="pokemon__form__button">
+                    Submit
+                </button>
             </form>
         </div>
     );
