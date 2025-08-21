@@ -1,7 +1,9 @@
 @use "scss-reset";
 
 body {
-  background-color: #C3E0E5;
+  background-image: url("../../assets/background-img.png");
+  background-size: cover;
+  background-position: center;
   text-align: center;
   display: flex;
   align-items: center;
