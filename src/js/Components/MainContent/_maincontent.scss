@@ -1,5 +1,6 @@
 @use "../../../scss/general/variables";
 @use "../../../scss/general/typography";
+@use "../../../scss/general/mixins";
 
 .article__main {
   //border: black solid 1px;
@@ -54,4 +55,9 @@
   background-image: url("../../../assets/lugia.png");
     background-position: center;
   background-repeat: no-repeat;
+
+  @include mixins.mobile{
+    margin-top: 150px
+  }
 }
+
