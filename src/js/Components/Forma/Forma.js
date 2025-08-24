@@ -7,21 +7,42 @@ const Forma = () => {
         ime: "",
         priimek: "",
         deck: "",
-        email: ""
+        email: "",
     });
 
     const navigate = useNavigate();
 
+    // handle input changes
     const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({ ...formData, [name]: value });
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value,
+        });
     };
 
-    const handleSubmit = (e) => {
+    // handle submit
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log("Form submitted:", formData);
-        alert("Form submitted! You’ll be redirected to main page.");
-        navigate("/");
+
+        try {
+            const response = await fetch("http://localhost:5000/players", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(formData),
+            });
+
+            if (response.ok) {
+                alert("✅ Prijava uspešna!");
+                setFormData({ ime: "", priimek: "", deck: "", email: "" });
+                navigate("/");
+
+            } else {
+                alert("❌ Prišlo je do napake.");
+            }
+        } catch (error) {
+            console.error("Napaka:", error);
+            alert("❌ Strežnik ni dosegljiv.");
+        }
     };
 
 

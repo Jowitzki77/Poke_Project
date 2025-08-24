@@ -23,6 +23,7 @@ const MainContent = () => {
                         </a>
                         <h3 className="infoboard__description">Kdaj?</h3>
                         <p className="infoboard__text">6.9.2025 od 10:00 do 17:00</p>
+                        <img className="lugia__img" src="../../../assets/lugia.png"/>
                     </div>
 
                     {/* RIGHT SIDE EVENTS */}
@@ -62,11 +63,6 @@ const MainContent = () => {
                                 Prijavnine <span className="poke__span">NI</span>
                             </p>
 
-                            <Link to="/turnir">
-                                <button className="btn btn__turnir__info">
-                                    Klikni za več informacij
-                                </button>
-                            </Link>
                             <Link to="/prijava">
                                 <button className="btn btn__turnir__info">Prijava</button>
                             </Link>

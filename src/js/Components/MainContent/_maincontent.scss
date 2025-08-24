@@ -47,17 +47,33 @@
               -1px  1px 0 burlywood, // bottom-left
               1px  1px 0 burlywood; // bottom-right
     }
+    .article__turnir__text{
+      font-family: variables.$secondaryFont;
+    }
 
   }
 }
 
-.left__article{
-  background-image: url("../../../assets/lugia.png");
-    background-position: center;
-  background-repeat: no-repeat;
+.left__article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  @include mixins.mobile{
-    margin-top: 150px
+  @include mixins.mobile {
+    margin-top: 100px;
   }
+
+  .lugia__img {
+    width: 300px;
+
+    @include mixins.mobile {
+      width: 200px;
+    }
+  }
+}
+
+
+.btn__turnir__info{
+  margin: 20px;
 }
 

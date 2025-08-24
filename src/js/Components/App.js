@@ -5,6 +5,8 @@ import Dogodki from "../Pages/Dogodki";
 import Turnir from "../Pages/Turnir";
 import Prijava from "../Pages/Prijava";
 
+const mongoDbUrl = "mongodb+srv://jakobjovanhrustl:Admin12345@cluster0.62fpn57.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+
 const App = () => {
     return (
         <Router>
