@@ -1,0 +1,25 @@
+@use "variables.scss";
+
+.btn__turnir__info {
+  background-color: variables.$burlyColor; // Pikachu yellow
+  color: #3b4cca; // Pokémon blue
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 0 #3b4cca; // Blue shadow for depth
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: #ffcb05; // lighter yellow
+    box-shadow: 0 6px 0 #3b4cca;
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #3b4cca;
+  }
+}

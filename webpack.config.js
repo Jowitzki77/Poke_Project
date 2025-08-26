@@ -9,6 +9,11 @@ const entryPath = "src";
 module.exports = {
     mode: "none",
     entry: `./${entryPath}/js/index.js`,
+    resolve: {
+        fallback: {
+            process: require.resolve("process/browser.js"),
+        },
+    },
     devtool: "inline-source-map",
     output: {
         filename: "out.js",
@@ -29,7 +34,7 @@ module.exports = {
             writeToDisk: true,
         },
         compress: true,
-        port: 3002,
+        port: 3003,
         historyApiFallback: true,
     },
     module: {
@@ -72,7 +77,7 @@ module.exports = {
     },
     plugins: [
         new webpack.ProvidePlugin({
-            process: "process/browser",
+            process: "process/browser.js",
         }),
         new HtmlWebpackPlugin({
             filename: "index.html",

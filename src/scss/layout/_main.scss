@@ -1,7 +1,9 @@
 @use "scss-reset";
 
 body {
-  background-color: #232730;
+  background-image: url("../../assets/background-img.png");
+  background-size: cover;
+  background-position: center;
   text-align: center;
   display: flex;
   align-items: center;
@@ -9,3 +11,4 @@ body {
 }
 h1 { font-size: 2em; color: #fff; font-family: Arial, sans-serif;}
 .react-icon { width: 30%; }
+

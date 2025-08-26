@@ -1,0 +1,62 @@
+@use "../../../../scss/general/variables";
+@use "../../../../scss/general/mixins";
+.menu {
+  display: flex;
+  align-items: center;
+
+  .menu__toggle--icon {
+    display: inline-block;
+    width: 3em;
+    margin-right: 1em;
+    cursor: pointer;
+
+    @include mixins.mobile {
+      position: fixed;
+      right: 2em;
+      top: 1.5em;
+      margin-right: 0;
+      z-index: 1001; // above the nav
+    }
+  }
+
+  ul {
+    display: flex;
+    gap: 1em;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    @include mixins.mobile {
+      display: none; // 🔴 HIDE by default on mobile
+      flex-direction: column;
+      background: variables.$burlyColor;
+      width: 100%;
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 100px;
+      text-align: center;
+      padding: 2em;
+      z-index: 1000;
+
+      &.open {
+        display: flex; // 🟢 show when "open" class is toggled
+      }
+    }
+  }
+
+  li {
+    a {
+      color: variables.$secondaryColor;
+      font-family: variables.$primaryFont;
+      text-decoration: none;
+      display: block;
+      padding: 0.5em 1em;
+      text-shadow:
+              -1px -1px 0 burlywood,
+              1px -1px 0 burlywood,
+              -1px  1px 0 burlywood,
+              1px  1px 0 burlywood;
+    }
+  }
+}

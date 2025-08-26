@@ -1,0 +1,88 @@
+@use "../../../scss/general/variables";
+@use "../../../scss/general/typography";
+@use "../../../scss/general/mixins";
+
+.article__main {
+  //border: black solid 1px;
+  padding: 5em;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  .infoboard__title{
+    font-size: 2em;
+    font-family: variables.$primaryFont;
+    outline: burlywood;
+    margin: 10px;
+    text-shadow:
+            -1px -1px 0 burlywood, // top-left
+            1px -1px 0 burlywood, // top-right
+            -1px  1px 0 burlywood, // bottom-left
+            1px  1px 0 burlywood; // bottom-right
+  }
+  .infoboard__text{
+    font-family: variables.$secondaryFont;
+    margin-top: 5px;
+    text-shadow:
+            -1px -1px 0 burlywood, // top-left
+            1px -1px 0 burlywood, // top-right
+            -1px  1px 0 burlywood, // bottom-left
+            1px  1px 0 burlywood; // bottom-right
+  }
+  .infoboard__description{
+    font-family: variables.$primaryFont;
+    text-shadow:
+            -1px -1px 0 burlywood, // top-left
+            1px -1px 0 burlywood, // top-right
+            -1px  1px 0 burlywood, // bottom-left
+            1px  1px 0 burlywood; // bottom-right
+  }
+  .article__event{
+    margin: 20px;
+    .article__turnir__title{
+      font-family: variables.$primaryFont;
+      font-size: 2em;
+      text-shadow:
+              -1px -1px 0 burlywood, // top-left
+              1px -1px 0 burlywood, // top-right
+              -1px  1px 0 burlywood, // bottom-left
+              1px  1px 0 burlywood; // bottom-right
+    }
+    .article__turnir__span{
+      font-family: variables.$secondaryFont;
+      text-transform: uppercase;
+      text-shadow:
+              -1px -1px 0 burlywood, // top-left
+              1px -1px 0 burlywood, // top-right
+              -1px  1px 0 burlywood, // bottom-left
+              1px  1px 0 burlywood; // bottom-right
+    }
+    .article__turnir__text{
+      font-family: variables.$secondaryFont;
+    }
+
+  }
+}
+
+.left__article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include mixins.mobile {
+    margin-top: 100px;
+  }
+
+  .lugia__img {
+    width: 300px;
+
+    @include mixins.mobile {
+      width: 200px;
+    }
+  }
+}
+
+
+.btn__turnir__info{
+  margin: 20px;
+}
+
