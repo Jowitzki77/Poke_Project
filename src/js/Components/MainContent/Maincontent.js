@@ -30,18 +30,17 @@ const MainContent = () => {
                     <div className="col-2 article__main right__article">
                         {/* POKE TRZNICA */}
                         <div className="article__event">
-                            <h2 className="article__turnir__title">Poke Tržnica</h2>
+                            <h2 className="article__turnir__title">Poke Party Cele!</h2>
                             <p className="article__turnir__text">
-                                Pridružite se nam in raziskujte pri številnih razstavljalcih
+                                Pridružite se nam in raziskujte pri <span className="article__turnir__span">MNOGIH</span> razstavljalcih
                             </p>
                             <p className="article__turnir__text">
-                                Menjaj, prodaj, kupi ali pa kar tako, namenjeno je vsem!
+                                <span className="article__turnir__span">Menjaj, prodaj, kupi</span>  ali pa kar tako, namenjeno je vsem!
                             </p>
                             <p className="article__turnir__text">
                                 Želiš imeti svojo mizo? Piši nam, saj je število miz omejeno!
                             </p>
 
-                            {/* Buttons with navigation */}
                             <Link to="/turnir">
                                 <button className="btn btn__turnir__info">
                                     Klikni za več informacij

@@ -1,6 +1,7 @@
 import React from "react";
+import "./_logo.scss"
 
-import logo from "../../../../assets/pngegg.png";
+import logo from "../../../../assets/PokePartyCele.png";
 const Logo = (props) => {
     return (
         <div className={props.type}>

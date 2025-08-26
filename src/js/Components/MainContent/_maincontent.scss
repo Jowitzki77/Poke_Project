@@ -47,6 +47,15 @@
               -1px  1px 0 burlywood, // bottom-left
               1px  1px 0 burlywood; // bottom-right
     }
+    .article__turnir__span{
+      font-family: variables.$secondaryFont;
+      text-transform: uppercase;
+      text-shadow:
+              -1px -1px 0 burlywood, // top-left
+              1px -1px 0 burlywood, // top-right
+              -1px  1px 0 burlywood, // bottom-left
+              1px  1px 0 burlywood; // bottom-right
+    }
     .article__turnir__text{
       font-family: variables.$secondaryFont;
     }
