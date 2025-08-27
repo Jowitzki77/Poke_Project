@@ -31,7 +31,7 @@ const MainContent = () => {
                             <p className="article__turnir__text"><span className="article__turnir__span">Menjaj, prodaj, kupi</span>  ali pa kar tako, namenjeno je vsem!</p>
                             <p className="article__turnir__text">Želiš imeti svojo mizo? Piši nam, saj je število miz omejeno!</p>
 
-                            <Link to="/turnir">
+                            <Link to="/dogodki">
                                 <button className="btn btn__turnir__info">Klikni za več informacij</button>
                             </Link>
 
