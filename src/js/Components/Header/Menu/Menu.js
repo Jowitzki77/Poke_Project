@@ -6,7 +6,6 @@ const Menu = () => {
     const [isMobile, setIsMobile] = useState(window.innerWidth < 900);
     const [isOpen, setIsOpen] = useState(false);
 
-    // Update isMobile on window resize
     useEffect(() => {
         const handleResize = () => {
             setIsMobile(window.innerWidth < 900);
@@ -24,14 +23,12 @@ const Menu = () => {
 
     return (
         <nav className="menu">
-            {/* Burger icon only on mobile */}
             {isMobile && (
                 <img
                     onClick={() => setIsOpen(!isOpen)}
                     src={menuIcon}
                     className="menu__toggle--icon"
-                    alt="mobile toggle"
-                />
+                    alt="mobile toggle"/>
             )}
 
             <ul className={`menu__list ${isMobile && isOpen ? "open" : ""} ${isMobile && !isOpen ? "closed" : ""}`}>
