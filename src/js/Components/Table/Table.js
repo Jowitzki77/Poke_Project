@@ -5,6 +5,14 @@ const Table = () => {
     const players = [
         { rank: 1, name: "John Doe", deck: ["Gardevoir", "Wo-Chien"], result: "1-0-0" },
         { rank: 2, name: "Janez Novak", deck: ["Flutter Mane", "Chi-Yu"], result: "0-0-1" },
+        { rank: 3, name: "Ana Horvat", deck: ["Ting-Lu", "Iron Hands"], result: "0-1-0" },
+        { rank: 4, name: "Marko Kralj", deck: ["Arceus", "Dialga"], result: "1-0-0" },
+        { rank: 5, name: "Eva Zupan", deck: ["Mewtwo", "Lugia"], result: "0-0-1" },
+        { rank: 6, name: "Luka Petrovic", deck: ["Pikachu", "Charizard"], result: "0-1-0" },
+        { rank: 7, name: "Sara Kosec", deck: ["Blaziken", "Swampert"], result: "1-0-0" },
+        { rank: 8, name: "Tina Novak", deck: ["Lucario", "Infernape"], result: "0-0-1" },
+        { rank: 9, name: "Miha Zajc", deck: ["Garchomp", "Hydreigon"], result: "0-1-0" },
+        { rank: 10, name: "Nina Kraljic", deck: ["Sylveon", "Espeon"], result: "1-0-0" }
     ]
     return(
         <>
